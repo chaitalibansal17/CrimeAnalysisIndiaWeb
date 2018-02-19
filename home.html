@@ -1,0 +1,331 @@
+
+<html>
+<head>
+<title> CRIMES AGAINST WOMEN IN INDIA</title>
+</head>
+
+<style type="text/css">
+#body {
+width: 100%;
+height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #4B0082;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 136px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: grey;
+    background-color:#CD5C5C;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:#ffffff ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 115px;
+    text-decoration: none;
+    font-size: 25px;
+    margin:0px 0px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#container1 {
+	min-width: 300px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+.spacer {
+    height: 70px;
+}
+h1{
+ font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+ }
+p{
+font-family: "Verdana", Verdana, sans-serif;
+}
+h2{font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+
+}
+
+</style>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">HOME</a>
+  <a href="analysis.html">ANALYSIS</a>
+  <a href="mod1.html">MODELING</a>
+  <a href="data.html">DATA</a>
+</div>
+
+<hr width="100%">
+<h1 style="color:#800000;" align="center"> CRIMES AGAINST WOMEN IN INDIA</h1>
+
+<p align="justify" style="padding-left:100px;padding-right:100px">India is ranked number 8 in the world for crimes against women.As many as 2.24 million crimes against women have been reported over the past decade: 26 crimes against women are reported every hour, or one complaint every two minutes revealing high crime rate in India.
+The semantic meaning of crime against women is direct or indirect physical or mental cruelty to women. Crimes directed specifically against women and in which only women are victims are characterised as crimes against women.</p>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-andaman-and-nicobar.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" align="center"></div>
+<div class="spacer"></div>
+<h2 style="color:#800000;"  align="center"> How things have changed over the time?</h2>
+
+<p align="justify" style="padding-left:100px;padding-right:100px">Crimes against women have more than doubled over the past ten years, according to latest data released by the National Crime Records Bureau.The total crime in India has increased at high level whereas the strength of police hasn't increased as per the same rate.
+Now the question is that "Does low strength of Police leads to the increase in Crimes?" <b>(<a href="police.html" style="color: rgb(0,0,0);text-decoration:none" >Click here to know</a>)</b>
+</p>
+<br>
+<br>
+<div id="container1"></div>
+
+<br><br><br>
+<hr width=100%>
+<footer align="center">  
+<img src="safecity.jpg" align="center">  
+</img>   
+<p align="center" style="color:#000">Posted by: Anuj Maurya and Chaitali Bansal</p>  
+
+<p align="center" style="color:#000">Visit:   
+<a href="http://safecity.in/" style="color:#000" target="_blank">Safecity.in</a> 
+</p>  
+</footer>
+
+
+<script>
+
+
+var data1 = [
+    ['in-5390', 0],
+    ['in-py', 77],
+    ['in-ld', 4],
+    ['in-an', 115],
+    ['in-wb', 38299],
+    ['in-or', 14606],
+    ['in-br', 15383],
+    ['in-sk', 110],
+    ['in-ct', 6255],
+    ['in-tn', 6325],
+    ['in-mp', 28678],
+    ['in-2984',10837],
+    ['in-ga', 488],
+    ['in-nl', 67],
+    ['in-mn', 337],
+    ['in-ar', 351],
+    ['in-mz', 258],
+    ['in-tr', 1615],
+    ['in-3464', 15],
+    ['in-dl', 15265],
+    ['in-hr', 8974],
+    ['in-ch', 432],
+    ['in-hp', 1517],
+    ['in-jk', 5972],
+    ['in-kl', 11380],
+    ['in-ka', 13914],
+    ['in-dn', 21],
+    ['in-mh', 26693],
+    ['in-as', 19139],
+    ['in-ap', 30648],
+    ['in-ml', 388],
+    ['in-pb', 5425],
+    ['in-rj', 31151],
+    ['in-up', 38467],
+    ['in-ut', 1395],
+    ['in-jh', 5972]
+];
+
+
+
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'countries/in/custom/in-all-andaman-and-nicobar'
+    },
+
+    title: {
+        text: ' '
+    },
+
+
+    mapNavigation: {
+        enabled: true,
+		enableDoubleClickZoomTo: true,
+        buttonOptions: {
+            verticalAlign: 'bottom',
+			theme: {
+                    fill: 'white',
+                    'stroke-width': 1,
+                    stroke: 'silver',
+                    r: 0,
+                    states: {
+                        hover: {
+                            fill: '#a4edba'
+                        },
+                        select: {
+                            stroke: '#039',
+                            fill: '#a4edba'
+                        }
+                    }
+                }
+			
+        }
+    },
+
+    colorAxis: {
+        min: 0,
+		
+    },
+	legend:
+	{enabled: false
+	},
+	 credits: {
+    enabled: false
+    },
+	exporting: {
+         enabled: false
+},
+
+    series: [{  
+        data: data1,
+        name: 'NO. OF CRIMES REPORTED AGAINST WOMEN(2015)',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        }
+    }]
+});
+
+
+Highcharts.chart('container1', {
+
+    title: {
+        text: 'INDIA 2003-2015'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Number'
+        }
+    },
+    legend: {
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
+
+    plotOptions: {
+        series: {
+            pointStart: 2003
+        }
+    },
+    Navigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+     credits: {
+    enabled: false
+    },
+	exporting: {
+         enabled: false
+},
+
+    series: [{
+        name: 'TOTAL CRIMES',
+        data: [1668716,1778387,1766537,1820330,1933608, 2044029,  2071094,2173539,2272222,2332901, 2647722,2858939,2949400]
+   }, {
+        name: 'POLICE STATION',
+        data: [1228554
+,1337183
+,1342858
+,1406021
+,1425181
+,1473595
+,1557497
+,1580311
+,1660151
+,1674755
+,1731537
+,1731537
+,1721101
+]
+    }, {
+        name: 'CRIMES AGAINST WOMEN',
+        data: [140601
+,154333
+,155553
+,164765
+,185312
+,195857
+,203804
+,213585
+,228650
+,244270
+,309546
+,337922
+,330187
+]
+    }]
+
+});
+
+
+
+
+</script>
+</body>
+</html>

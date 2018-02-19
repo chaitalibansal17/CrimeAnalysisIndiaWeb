@@ -1,0 +1,445 @@
+<html>
+<head>
+<title> CRIMES AGAINST WOMEN IN INDIA</title>
+</head>
+
+<style type="text/css">
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #665050;
+    text-align: center;
+    padding: 20px 115px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.spacer {
+    height: 70px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+h1{
+ font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+ }
+p{
+font-family: "Verdana", Verdana, sans-serif;
+}
+h2{font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+
+}
+.spacer1 {
+    height: 300px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<div class="topnav" id="myTopnav">
+  <a href="home.html">HOME</a>
+  
+  <a href="analysis.html">ANALYSIS</a>
+  <a href="mod1.html">MODELING</a>
+  <a href="data.html">DATA</a>
+</div>
+<script>
+Highcharts.chart('container9', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'RAPE IN INDIA 2015'
+    },
+    subtitle: {
+        text: 'NUMBER OF RAPES V/S RAPE PER FEMALE POPULATION'
+    },
+    xAxis: {
+    categories: ['MADHYA PRADESH', 'MAHARASHTRA', 'RAJASTHAN','UTTAR PRADESH', 'DELHI','ASSAM','WEST BENGAL','TRIPURA','MIZORAM','CHANDIGARH'],
+        title: {
+            text: null
+        }
+      
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' '
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: false
+           }
+        }
+    },
+    
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'TOTAL NO OF RAPE',
+        data:[4400,4189
+
+, 3649
+, 2938
+,2199
+,1733
+,1198,213,74
+,72
+
+
+
+ ]
+    }, {
+        name: 'NO OF RAPE IN 100000 FEMALE',
+        data: [13
+
+,8
+,11
+,15
+,28
+,11
+,1
+
+,12
+,14
+,15
+
+
+
+
+ ]
+    }
+    ]
+});
+</script>
+<hr width=100%>
+<h1 style="color:#800000;"  align="center"> DISTRIBUTION OF CRIMES AGAINST WOMEN IN INDIA</h1>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+<p align="justify" style="padding-left:100px;padding-right:100px">Pie chart shows that largest part of crime against women in India is cruelty by husband or relatives followed by sexual harassment
+ and molestation,following them are the rapes and kidnapping with little lower part in crimes along with other crime categories against women.
+ </p><br></br><br><br>
+<div id="container1" style="min-width: 510px; height: 400px; max-width: 1000px; margin: 0 auto" align="center"></div>
+
+
+
+<p align="justify" style="padding-left:100px;padding-right:100px">The above graph clearly represents the patterns and how the different crimes in India have changed with time.It is observed that most the of crimes(except trafficking and indecent representation of women) have increased in past decade showing a different pattern after 2014 but sexual harassment and molestation follows the same trend.<br> We selected few crimes based on their seriousness and did an individual analysis of them to get some good insights which can be seen in the next crime category analysis section.</br>
+
+
+ </p>
+<br><br>
+<div class="ok" align="center">
+<div class="dropdown">
+  <button class="dropbtn">CRIME CATEGORY</button>
+  <div class="dropdown-content">
+    <a href="rapeweb.html">RAPE</a>
+    <a href="kid.html">KIDNAPPING AND ABDUCTION</a>
+    <a href="sex.html">SEXUAL HARRASEMENT AND ABDUCTION</a>
+	<a href="dowry.html">DOWRY DEATH</a>
+	<a href="cruelty.html">CRUELTY BY HUSBAND OR RELATIVES</a>
+  </div>
+</div>
+</div>
+<div class="spacer1"></div>
+<br><br>
+
+<hr width=100%>
+<footer align="center">  
+  
+<img src="safecity.jpg">  
+</img>   
+<p align="center">Posted by: Anuj Maurya and Chaitali Bansal</p>  
+<p> 
+</p>  
+<p align="center">Visit:   
+<a href="http://safecity.in/" style="color:#000" target="_blank">Safecity.in</a>
+</p>  
+</footer>
+
+<script>
+
+
+Highcharts.chart('container1', {
+
+    title: {
+        text: 'CRIMES AGAINST WOMEN FROM 2003-2015 '
+    },
+
+    yAxis: {
+        title: {
+            text: 'Number of Cases'
+        }
+    },
+    legend: {
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
+     credits: {
+    enabled: false
+    },
+	exporting: {
+         enabled: false
+},
+
+    plotOptions: {
+        series: {
+            pointStart: 2003
+        }
+    },
+
+    series: [{
+        name: 'RAPE',
+        data: [15847
+,18233
+,18359
+,19348
+,20737
+,21467
+,21397
+,22172
+,24206
+,24923
+,33707
+,36735
+,34676
+]
+    }, {
+        name: 'KIDNAPPING AND ABDUCTION',
+        data: [13296
+,15578
+,15750
+,17414
+,20416
+,22939
+,25741
+,29795
+,35565
+,38262
+,51881
+,57311
+,41450
+]
+    }, {
+        name: 'DOWRY DEATH',
+        data: [6208
+,7026
+,6787
+,7618
+,8093
+,8172
+,8383
+,8391
+,8618
+,8233
+,8083
+,8455
+,7646
+]
+    }, {
+        name: 'SEXUAL HARRASMENT AND MOLESTATION',
+        data: [45264
+,44568
+,44159
+,46583
+,49684
+,52627
+,49720
+,50574
+,51538
+,54524
+,83328
+,91970
+,114480
+
+
+
+
+]
+    }, {
+        name: 'CRUELTY BY HUSBANDS OR RELATIVES',
+        data: [50703
+,58121
+,58319
+,63128
+,75930
+,81344
+,89546
+,94041
+,99135
+,106527
+,118866
+,122877
+,113548
+
+]
+    }
+    , {
+        name: 'TRAFFICKING',
+        data: [5510
+,5748
+,5908
+,4541
+,3568
+,2660
+,2474
+,2499
+,2436
+,2563
+,2579
+,2070
+,1193
+]
+    }, {
+        name: 'INDECENT REPRESENTATION OF WOMEN',
+        data: [1043
+,1378
+,2917
+,1562
+,1200
+,1025
+,845
+,895
+,453
+,141
+,362
+,47
+,40
+]
+    }]
+
+});
+$(document).ready(function() {
+
+  // Build the charthttp://jsfiddle.net/5bn9khf8/3/#tidy
+  Highcharts.chart('container', {
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+    },
+    title: {
+      text: 'CRIME DISTRIBUTION'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    credits: {
+      enabled: false
+    },
+    exporting: {
+      enabled: false
+    },
+    series: [{
+      name: 'cases',
+      colorByPoint: true,
+      data: [{
+        name: 'RAPE',
+        y: 11
+      }, {
+        name: 'KIDNAPPING AND ABDUCTION',
+        y: 13.2,
+        sliced: true,
+        selected: true
+      }, {
+        name: 'DOWRY DEATH',
+        y: 3.8
+      }, {
+        name: 'SEXUAL HARRASEMENT AND MOLESTATION',
+        y: 26.7
+      }, {
+        name: 'CRUELTY BY HUSBAND OR RELATIVES',
+        y: 39.6
+      }, {
+        name: 'TRAFFICKING',
+        y: 2.1
+      }, {
+        name: 'INDECENT REPRESENTATION OF WOMEN',
+        y: 5
+      }]
+    }]
+  });
+});
+</script>
+</html>

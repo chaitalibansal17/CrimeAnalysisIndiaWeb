@@ -1,0 +1,346 @@
+<html>
+<head>
+<title> CRIMES AGAINST WOMEN IN INDIA</title>
+</head>
+
+<style type="text/css">
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #665050;
+    text-align: center;
+    padding: 20px 115px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#container1 {
+	min-width: 300px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+.spacer {
+    height: 70px;
+}
+h1{
+ font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+ }
+p{
+font-family: "Verdana", Verdana, sans-serif;
+}
+h2{font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
+.moderate {
+    background-color: #eeadad;
+}
+.high {
+   background-color:#f66c6c;
+}
+.low {
+   background-color:#eecfcf;
+}
+
+.ex {
+   background-color:#e71c1c;
+}
+
+
+table#t02 th {
+    background-color: black;
+    color: white;
+}
+
+.im{
+
+display:in-line;
+}
+</style>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">HOME</a>
+  
+  <a href="analysis.html">ANALYSIS</a>
+  <a href="mod1.html">MODELING</a>
+  <a href="data.html">DATA</a>
+</div>
+<hr width=100%>
+
+
+
+
+<h1 style="color:#800000;"  align="center">LET'S FIND YOU THE SAFEST PLACE!</h1>
+<p align="center" style="padding-left:100px;padding-right:100px">Looking for a dangerous state by considering the <b>number of crimes reported</b> <br>or<br> Looking the states as per <b>rate of crimes</b>.<br><br>What's better? 
+<br><b> NONE!
+<br><br></b>
+<p align="center" style="font-size:25px;padding-left:100px;padding-right:100px">What's important is to consider the severity/seriousness of these crimes and find a safest place for women.
+
+</p>
+<p align="justify" style="padding-left:100px;padding-right:100px">
+<br>
+
+<b>Severity Index</b> is a method to add weights to each crime  category on the basis of it's seriousness which is determined by the level of punishment,the effect on the victim and the fear among people.
+
+Crimes are usually classified as <b>verbal abuse</b>, <b>Non-verbal abuse</b>, <b>Physical abuse</b>, <b>serious physical abuse</b> and others. Where verbal abuse involves Catcalls, Whistling, Commenting, Sexual Invites and non verbal include ogling, staring, taking pictures, Indecent Exposure.
+
+<br><br>The weighting system used is to assign levels of seriousness to each offence.Physical abuse are more serious than verbal. Hence will be assigned a higher weight.
+<br>
+
+
+<br>
+ We have added weights to  the major crimes in India as per the severity index and crime classification.
+ <br><br><br>
+ <table id="t01" align="center">
+  <tr>
+    <th>OFFENCE</th>
+    <th>WEIGHT</th> 
+    
+  </tr>
+  <tr>
+    <td>RAPE</td>
+    <td>2.2</td>
+    
+  </tr>
+  <tr>
+    <td>DOWRY DEATH</td>
+    <td>1.8</td>
+  
+  </tr>
+  <tr>
+    <td>KIDNAPPING AND ABDUCTION</td>
+    <td>1.5</td>
+
+  </tr>
+  <tr>
+    <td>TRAFFICKING</td>
+    <td>1.5</td>
+    
+  </tr>
+ 
+  <tr>
+    <td>CRUELTY BY HUSBAND OR RELATIVES</td>
+    <td>1.2</td>
+    
+  </tr>
+  <tr>
+    <td>SEXUAL HARASSMENT AND MOLESTATION</td>
+    <td>1.2</td>
+    
+  </tr>
+  <tr>
+    <td>INDECENT REPRESENTATION OF WOMEN</td>
+    <td>0.6</td>
+    
+  </tr>
+</table>
+<br>
+ &#9632 Rape and dowry death are given the highest weight because they are severe physical Abuse.<br>
+ &#9632 Kidnapping , abduction and trafficking are the same level of physical offence.<br>
+ &#9632 Cruelty, sexual harassment and molestation are verbal as well as physical abuse taking lesser weight than above offences.<br>
+ &#9632 Indecent representation of women in Movies, images, videos over the internet is non verbal abuse. Therefore, it is given least weight.<br>
+ 
+<br><br>
+
+Our model here is to multiply crime rate of every offence with it's weight for every state and determine it's total Score.
+Crime rate is the number of crimes reported upon the female population into 100000.We have choosen crime rate over number of crimes reported because it is a better indicator as we have noticed in analysis of each crime type in analysis section.
+
+We found these scores for each state/Union territory in India as per the data from 2015.
+<br><br><br>
+
+<table id="t02" align="center">
+  <tr>
+    <th>STATE/UNION TERRITORY</th>
+    <th>SCORE</th> 
+    
+  </tr>
+  <tr class="high">
+  <td>ANDHRA PRADESH</td><td>	89</td>
+  </tr>
+  <tr class="moderate">
+  <td>
+ARUNACHAL PRADESH</td><td>	70</td></tr>
+<tr class="ex">
+
+<td>ASSAM</td>	<td>201</td></tr>
+<tr  class="moderate">
+<td>
+BIHAR</td>
+<td>34</td>
+</tr>
+<tr class="moderate"><td>
+CHHATTISGARH</td><td>	58</td>
+</tr>
+<tr class="moderate">
+<td>
+GOA	</td><td>63</td></tr>
+<tr class="low">
+<td>
+GUJARAT</td>	<td>32</td></tr>
+<tr class="high">
+<td>
+HARYANA</td>	<td>109</td></tr>
+
+<tr class="moderate">
+<td>
+HIMACHAL PRADESH</td>	<td>53</td></tr>
+<tr class="moderate">
+<td>
+JAMMU & KASHMIR</td>	<td>68</td>
+</tr>
+<tr class="moderate">
+<td>JHARKHAND</td>	<td>45</td>
+</tr>
+<tr class="moderate">
+<td>
+KARNATAKA</td>	<td>44</td>
+</tr>
+<tr class="moderate">
+<td>
+KERALA</td>	<td>73</td>
+</tr>
+<tr class="high">
+<td>
+MADHYA PRADESH</td>	<td>89</td></tr>
+<tr class="moderate">
+<td>
+MAHARASHTRA</td>	<td>70</td>
+<tr class="low">
+<td>
+MANIPUR</td>	<td>30</td>
+</tr>
+<tr class="low"><td>
+MEGHALAYA</td> <td>32</td>
+</tr>
+<tr class="moderate"><td>
+MIZORAM</td>	<td>54</td>
+</tr>
+<tr class="low"><td>
+NAGALAND</td>	<td>12</td></tr>
+<tr class="high">
+<td>
+ODISHA</td>	<td>101</td>
+</td>
+<tr class="moderate"><td>
+PUNJAB</td>	<td>57</td></tr>
+<tr class="high"><td>
+RAJASTHAN</td>	<td>114</td>
+</tr>
+<tr class="low">
+<td>
+SIKKIM</td>	<td>15</td>
+</tr>
+<tr class="low">
+<td>
+TAMIL NADU</td>	<td>21</td>
+</tr>
+<tr class="high"><td>
+TRIPURA</td>	<td>96</td></tr>
+<tr class="moderate">
+<td>
+UTTAR PRADESH</td>	<td>46</td>
+</tr>
+<tr class="moderate">
+<td>
+UTTARAKHAND</td>	<td>40</td></tr>
+<tr class="high"><td>
+WEST BENGAL</td>	<td>86</td>
+</tr>
+<tr class="high"><td>
+A & N ISLANDS</td>	<td>96</td>
+</tr>
+<tr class="high"><td>
+CHANDIGARH</td> <td>111</td>
+</tr>
+<tr class="low">
+<td>
+D & N HAVELI</td>	<td>19</td>
+</tr>
+<tr class="moderate">
+<td>
+DAMAN & DIU</td>	<td>34</td>
+</tr>
+<tr class="ex"><td>
+DELHI</td>	<td>238</td></tr>
+<tr class="moderate">
+<td>
+LAKSHADWEEP</td>	<td>34</td></tr>
+<tr class="low">
+<td>
+PUDUCHERRY</td> <td>11</td></tr> 
+</table>
+<br><br><br>
+
+ &#9632 The Score reveals that Delhi is most unsafe place in India for women followed by Assam, Rajasthan and Chandigarh.<br>
+ &#9632 Puducherry,Nagaland,Sikkim,Tamil Nadu,Manipur,Meghalaya and Gujarat are the safest place in India for women.<br> 
+ &#9632 Haryana,Odisha,Andhra Pradesh,Madhya Pradesh,Tripura and West bengal are also a place to be worried about women safety.<br>
+
+
+</p>
+
+<br><p align="center"><b>(<a href="severitymap.html" style="color: rgb(0,0,0);text-decoration:none" >Click here to see intensity map</a>)</b></p>
+<br><br><br>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-andaman-and-nicobar.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+
+
+<hr width=100%>
+<footer align="center">  
+  
+<img src="safecity.jpg">  
+</img>   
+<p align="center">Posted by: Anuj Maurya and Chaitali Bansal</p>  
+<p> 
+</p>  
+<p align="center">Visit:   
+<a href="http://safecity.in/" style="color:#000" target="_blank">Safecity.in</a> 
+</p>  
+</footer>
+
+</body>
+</html>

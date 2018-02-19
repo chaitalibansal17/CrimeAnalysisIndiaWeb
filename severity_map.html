@@ -1,0 +1,240 @@
+
+<html>
+<head>
+<title> CRIMES AGAINST WOMEN IN INDIA</title>
+</head>
+
+<style type="text/css">
+#body {
+width: 100%;
+height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #4B0082;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 136px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: grey;
+    background-color:#CD5C5C;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:#ffffff ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 115px;
+    text-decoration: none;
+    font-size: 25px;
+    margin:0px 0px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#container1 {
+	min-width: 300px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+.spacer {
+    height: 70px;
+}
+h1{
+ font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+ }
+p{
+font-family: "Verdana", Verdana, sans-serif;
+}
+h2{font-family: "Verdana", Verdana, sans-serif;
+ font-style:bold;
+
+}
+
+</style>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">HOME</a>
+  <a href="analysis.html">ANALYSIS</a>
+  <a href="mod1.html">MODELING</a>
+  <a href="data.html">DATA</a>
+</div>
+
+
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-andaman-and-nicobar.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" align="center"></div>
+<div class="spacer"></div>
+
+<br>
+<br>
+
+<hr width=100%>
+
+
+
+<script>
+
+
+var data1 = [
+    ['in-5390', 0],
+    ['in-py', 11],
+    ['in-ld', 34],
+    ['in-an', 96],
+    ['in-wb', 86],
+    ['in-or', 101],
+    ['in-br', 34],
+    ['in-sk', 15],
+    ['in-ct', 58],
+    ['in-tn', 21],
+    ['in-mp', 89],
+    ['in-2984',32],
+    ['in-ga', 63],
+    ['in-nl', 12],
+    ['in-mn', 30],
+    ['in-ar', 70],
+    ['in-mz', 54],
+    ['in-tr', 96],
+    ['in-3464', 34],
+    ['in-dl', 238],
+    ['in-hr', 109],
+    ['in-ch', 58],
+    ['in-hp', 53],
+    ['in-jk', 45],
+    ['in-kl', 73],
+    ['in-ka', 44],
+    ['in-dn', 19],
+    ['in-mh', 70],
+    ['in-as', 201],
+    ['in-ap', 89],
+    ['in-ml', 32],
+    ['in-pb', 57],
+    ['in-rj', 114],
+    ['in-up', 46],
+    ['in-ut', 40],
+    ['in-jh', 45]
+];
+
+
+
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'countries/in/custom/in-all-andaman-and-nicobar'
+    },
+
+    title: {
+        text: ' '
+    },
+
+    color:
+	{
+	
+	},
+    mapNavigation: {
+        enabled: true,
+		enableDoubleClickZoomTo: true,
+        buttonOptions: {
+            verticalAlign: 'bottom',
+			theme: {
+                    fill: 'white',
+                    'stroke-width': 1,
+                    stroke: 'silver',
+                    r: 0,
+                    states: {
+                        hover: {
+                            fill: '#a4edba'
+                        },
+                        select: {
+                            stroke: '#039',
+                            fill: '#a4edba'
+                        }
+                    }
+                }
+			
+        }
+    },
+
+    colorAxis: {
+        min:0,
+		max:238
+		
+    },
+	legend:
+	{enabled: false
+	},
+	 credits: {
+    enabled: false
+    },
+	exporting: {
+         enabled: false
+},
+
+    series: [{  
+        data: data1,
+        name: 'CRIME SEVERITY INDEX RATE',
+        states: {
+          
+        },
+        dataLabels: {
+            enabled: false,
+            format: '{point.name}'
+        }
+    }]
+});
+
+
+
+
+
+</script>
+</body>
+</html>
